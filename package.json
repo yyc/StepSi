@@ -1,0 +1,22 @@
+{
+  "name": "stepsi",
+  "version": "1.0.0",
+  "description": "A Step Simulator for the Actxa Stride",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyc/StepSi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyc/StepSi/issues"
+  },
+  "homepage": "https://github.com/yyc/StepSi#readme",
+  "dependencies": {
+    "gattacker": "^0.2.1"
+  }
+}
