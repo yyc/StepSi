@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/yyc/StepSi#readme",
   "dependencies": {
-    "gattacker": "^0.2.1"
+    "bleno": "^0.4.2",
+    "gattacker": "^0.2.1",
+    "util": "^0.10.3"
   }
 }
