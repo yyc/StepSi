@@ -1,0 +1,13 @@
+{
+    "id": "88c2550ae28a",
+    "eir": "0201060302c0ff",
+    "scanResponse": "0d0941637478612d537472696465",
+    "decodedNonEditable": {
+        "localName": "Actxa-Stride",
+        "manufacturerDataHex": null,
+        "manufacturerDataAscii": null,
+        "serviceUuids": [
+            "ffc0"
+        ]
+    }
+}

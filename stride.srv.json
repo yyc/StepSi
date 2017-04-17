@@ -1,0 +1,149 @@
+[
+    {
+        "uuid": "1800",
+        "name": "Generic Access",
+        "type": "org.bluetooth.service.generic_access",
+        "startHandle": 1,
+        "endHandle": 11,
+        "characteristics": [
+            {
+                "uuid": "2a00",
+                "name": "Device Name",
+                "properties": [
+                    "read"
+                ],
+                "value": "41637478612d537472696465",
+                "descriptors": [],
+                "startHandle": 2,
+                "valueHandle": 3,
+                "asciiValue": "Actxa-Stride"
+            },
+            {
+                "uuid": "2a01",
+                "name": "Appearance",
+                "properties": [
+                    "read"
+                ],
+                "value": "0000",
+                "descriptors": [],
+                "startHandle": 4,
+                "valueHandle": 5,
+                "asciiValue": "  "
+            },
+            {
+                "uuid": "2a02",
+                "name": "Peripheral Privacy Flag",
+                "properties": [
+                    "read",
+                    "write"
+                ],
+                "value": "00",
+                "descriptors": [],
+                "startHandle": 6,
+                "valueHandle": 7,
+                "asciiValue": " "
+            },
+            {
+                "uuid": "2a03",
+                "name": "Reconnection Address",
+                "properties": [
+                    "write"
+                ],
+                "value": "",
+                "descriptors": [],
+                "startHandle": 8,
+                "valueHandle": 9
+            },
+            {
+                "uuid": "2a04",
+                "name": "Peripheral Preferred Connection Parameters",
+                "properties": [
+                    "read"
+                ],
+                "value": "5000a0000000e803",
+                "descriptors": [],
+                "startHandle": 10,
+                "valueHandle": 11,
+                "asciiValue": "P       "
+            }
+        ]
+    },
+    {
+        "uuid": "1801",
+        "name": "Generic Attribute",
+        "type": "org.bluetooth.service.generic_attribute",
+        "startHandle": 12,
+        "endHandle": 15,
+        "characteristics": [
+            {
+                "uuid": "2a05",
+                "name": "Service Changed",
+                "properties": [
+                    "indicate"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 15,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 13,
+                "valueHandle": 14
+            }
+        ]
+    },
+    {
+        "uuid": "ffc0",
+        "name": null,
+        "type": null,
+        "startHandle": 16,
+        "endHandle": 65535,
+        "characteristics": [
+            {
+                "uuid": "ffc1",
+                "name": null,
+                "properties": [
+                    "write"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 19,
+                        "uuid": "2901",
+                        "value": "Wristbands Command"
+                    }
+                ],
+                "startHandle": 17,
+                "valueHandle": 18
+            },
+            {
+                "uuid": "ffc2",
+                "name": null,
+                "properties": [
+                    "notify"
+                ],
+                "value": "",
+                "descriptors": [
+                    {
+                        "handle": 23,
+                        "uuid": "2901",
+                        "value": "Wristbands Data"
+                    },
+                    {
+                        "handle": 22,
+                        "uuid": "2902",
+                        "value": ""
+                    }
+                ],
+                "startHandle": 20,
+                "valueHandle": 21,
+                "hooks": {
+                    "dynamicNotify": "hackSteps"
+                }
+
+            }
+        ]
+    }
+]
