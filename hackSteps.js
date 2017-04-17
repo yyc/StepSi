@@ -1,4 +1,3 @@
-var utils = require('../lib/utils');
 
 var stepAmount = "00ffff"; // Make sure these are 6 hex characters
 
@@ -13,7 +12,7 @@ function lockNotify(peripheralId, service, characteristic, type, data, notifyEmi
 
 	//Add in the step count
 	var data = strpart1 + stepAmount + strpart2;
-	console.log(`Received         ${datastr}, overwriting with ${data}`
+	console.log(`Received         ${datastr}, overwriting with ${data}`);
 
 	callback(null, new Buffer(data,'hex'));
 
