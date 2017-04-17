@@ -4,13 +4,13 @@
 // Require bleno peripheral library.
 // https://github.com/sandeepmistry/bleno
 //
-var bleno = require('bleno');
+var bleno = require('../bleno/index.js');
 
 var util = require('util');
 
 var StrideService = require('./stride-service');
 
-var name = 'Stride';
+var name = 'Actxa-Stride';
 
 var strideData = [{year:17, month: 4, day: 3, steps: 1000, activeMinutes: 20, km: 3},
   {year:17, month: 4, day: 4, steps: 1000, activeMinutes: 20, km: 3},

@@ -8,19 +8,24 @@ function WriteCharacteristic(uuid) {
     descriptors: [
       new bleno.Descriptor({
         uuid: '2901',
-        value: 'Bakes the pizza and notifies when done baking.'
+        value: Buffer.from('Step Tracker Data')
       })
     ]
   });
-
-  this.pizza = pizza;
 }
 
 util.inherits(WriteCharacteristic, bleno.Characteristic);
 
 WriteCharacteristic.prototype.onWriteRequest = function(data, offset, withoutResponse, callback) {
+  console.log('write write');
   console.log(data)
   console.log(offset)
 };
+
+WriteCharacteristic.prototype.onSubscribe = function(maxValueSize, updateValueCallback) {
+  console.log('sub write');
+  console.log(maxValueSize, updateValueCallback);
+};
+
 
 module.exports = WriteCharacteristic;
